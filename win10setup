@@ -1,0 +1,3 @@
+powershell command: Get-AppxPackage -AllUsers | Remove-AppxPackage
+Get winget (https://github.com/microsoft/winget-cli) to Uninstall onedrive and cortana
+Disable telemetry in gpedit
