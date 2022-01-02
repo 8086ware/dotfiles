@@ -1,5 +1,6 @@
 
-set numbeset relativenumber
+set number
+set relativenumber
 set autoindent
 set smartindent
 set exrc
@@ -23,12 +24,8 @@ let g:airline#extensions#tabline#enabled = 1
 syntax enable
 
 call plug#begin() 
-
-Plug 'fcpg/vim-fahrenheit'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 
 call plug#end()
-
-colorscheme fahrenheit
