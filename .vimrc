@@ -1,4 +1,3 @@
-
 set number
 set relativenumber
 set autoindent
@@ -20,12 +19,19 @@ set incsearch
 set laststatus=2
 set nocp
 set termguicolors
-let g:airline#extensions#tabline#enabled = 1
 syntax enable
+set guioptions-=T
+
+set guifont=Terminal:h9
 
 call plug#begin() 
+
+Plug 'vim-airline/vim-airline-themes'
+Plug 'sjl/badwolf'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 
 call plug#end()
+
+colorscheme badwolf
