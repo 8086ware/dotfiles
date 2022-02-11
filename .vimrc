@@ -1,11 +1,9 @@
 set number
 set relativenumber
 set autoindent
-set smartindent
-set exrc
 set nohlsearch
+set smartindent
 set hidden
-set noerrorbells
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -18,20 +16,20 @@ set undofile
 set incsearch
 set laststatus=2
 set nocp
-set termguicolors
-syntax enable
-set guioptions-=T
+set background=dark
+set fillchars=
 
-set guifont=Terminal:h9
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
-call plug#begin() 
+call plug#begin()
 
 Plug 'vim-airline/vim-airline-themes'
-Plug 'sjl/badwolf'
-Plug 'vim-airline/vim-airline'
+Plug 'tomasr/molokai'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
-colorscheme badwolf
+colorscheme molokai
