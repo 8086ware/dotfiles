@@ -16,20 +16,19 @@ set undofile
 set incsearch
 set laststatus=2
 set nocp
-set background=dark
-set fillchars=
+set cursorline
+set termguicolors
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
 
 call plug#begin()
 
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tomasr/molokai'
-Plug 'sheerun/vim-polyglot'
-Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'ayu-theme/ayu-vim'
+Plug 'preservim/nerdtree'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
-colorscheme molokai
+colorscheme ayu
