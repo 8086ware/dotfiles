@@ -1,1 +1,2 @@
-Hello! im 8086ware. These are my dotfiles.
+#8086ware Dotfiles
+Contains my .vimrc might add more later
