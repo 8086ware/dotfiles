@@ -13,20 +13,12 @@ set smartcase
 set encoding=utf-8
 set nowrap
 set mouse=a
-set guioptions-=T
-set guifont=Dejavu\ Sans\ Mono\ 10
+set termguicolors
 syntax enable
 
 call plug#begin()
 
-Plug 'tomasr/molokai'
-Plug 'sainnhe/sonokai'
-Plug 'morhetz/gruvbox'
-Plug 'ayu-theme/ayu-vim'
-Plug 'fcpg/vim-fahrenheit'
-
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 
 Plug 'sheerun/vim-polyglot'
 
@@ -36,7 +28,14 @@ Plug 'preservim/nerdtree'
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'kien/ctrlp.vim'
+
+Plug 'mhinz/vim-startify'
+
+Plug 'preservim/tagbar'
+
 call plug#end()
 
-colorscheme molokai
+nmap <F10> :TagbarToggle<CR>
 
+colorscheme pablo
