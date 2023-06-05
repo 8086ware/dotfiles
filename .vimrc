@@ -1,10 +1,10 @@
 set number
 set laststatus=2
 set tabstop=4
-set swapfile
-set backup
-set backupdir=/tmp/
-set dir=/tmp/
+set shiftwidth=4
+set nobackup
+set noswapfile
+set nowritebackup
 set title
 set autoindent
 set smartindent
@@ -13,29 +13,22 @@ set smartcase
 set encoding=utf-8
 set nowrap
 set mouse=a
-set termguicolors
 syntax enable
+set termguicolors
 
 call plug#begin()
 
-Plug 'vim-airline/vim-airline'
-
-Plug 'sheerun/vim-polyglot'
-
-Plug 'jiangmiao/auto-pairs'
-
-Plug 'preservim/nerdtree'
-
-Plug 'tpope/vim-fugitive'
-
-Plug 'kien/ctrlp.vim'
-
-Plug 'mhinz/vim-startify'
-
-Plug 'preservim/tagbar'
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "Code completion 
+Plug 'fcpg/vim-fahrenheit' "Good colorscheme
+Plug 'vim-airline/vim-airline' "Powerline and status bar
+Plug 'vim/killersheep' "Game
+Plug 'sheerun/vim-polyglot' "Language packs and good syntax highlighting
+Plug 'tpope/vim-fugitive' "Git support
+Plug 'kien/ctrlp.vim' "Fuzzy finder
+Plug 'mhinz/vim-startify' "Starting screen
 
 call plug#end()
 
 nmap <F10> :TagbarToggle<CR>
 
-colorscheme pablo
+colorscheme fahrenheit
