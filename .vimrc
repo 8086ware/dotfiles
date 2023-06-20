@@ -27,6 +27,3 @@ Plug 'tpope/vim-fugitive' "Git support
 Plug 'kien/ctrlp.vim' "Fuzzy finder
 
 call plug#end()
-
-nmap <F10> :TagbarToggle<CR>
-
