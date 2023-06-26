@@ -16,14 +16,16 @@ set mouse=a
 syntax enable
 set termguicolors
 set background=light
-set laststatus=2
 set showtabline=2
+set guifont=Lucida_Console:h14
 
 call plug#begin()
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'} "Code completion 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot' "Language packs and good syntax highlighting
 Plug 'tpope/vim-fugitive' "Git support
-Plug 'kien/ctrlp.vim' "Fuzzy finder
 
 call plug#end()
+
+colorscheme wildcharm
