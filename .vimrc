@@ -1,5 +1,4 @@
 set number
-set laststatus=2
 set tabstop=4
 set shiftwidth=4
 set nobackup
@@ -15,17 +14,18 @@ set nowrap
 set mouse=a
 syntax enable
 set termguicolors
-set background=light
+set cursorline
+set laststatus=2
 set showtabline=2
-set guifont=Lucida_Console:h14
+set guifont=Lucida_Console:h12
 
 call plug#begin()
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'preservim/nerdtree'
-Plug 'sheerun/vim-polyglot' "Language packs and good syntax highlighting
-Plug 'tpope/vim-fugitive' "Git support
+Plug 'sheerun/vim-polyglot'
+Plug 'neoclide/coc.nvim'
 
 call plug#end()
 
-colorscheme wildcharm
+colorscheme shine
