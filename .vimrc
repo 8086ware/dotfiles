@@ -15,17 +15,18 @@ set mouse=a
 syntax enable
 set termguicolors
 set cursorline
-set laststatus=2
-set showtabline=2
-set guifont=Lucida_Console:h12
+let g:airline#extensions#tabline#enabled = 1
 
 call plug#begin()
 
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
 
-colorscheme shine
+colorscheme solarized8_high
