@@ -25,8 +25,5 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
-
-colorscheme solarized8_high
